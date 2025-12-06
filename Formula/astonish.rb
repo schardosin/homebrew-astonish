@@ -4,38 +4,35 @@
 class Astonish < Formula
   desc "AI-powered terminal assistant"
   homepage "https://github.com/schardosin/astonish"
-  version "1.0.0"
+  version "1.0.4"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/schardosin/astonish/releases/download/v1.0.0/astonish-darwin-amd64"
-      sha256 "213d182e0b36f2c9bc1cd34d814bf990e57ce4b6d9a535e58d597e34ab6ff6ce"
+      url "https://github.com/schardosin/astonish/releases/download/v1.0.4/astonish-darwin-amd64"
+      sha256 "0612cc3f14a1cb19ee9803e0492e51333d534b55e8b933441647b94b8966d73d"
     end
 
     on_arm do
-      url "https://github.com/schardosin/astonish/releases/download/v1.0.0/astonish-darwin-arm64"
-      sha256 "813d242fe31c5fe94d5154751fea057c9b72210378383c697533003ed60782a6"
+      url "https://github.com/schardosin/astonish/releases/download/v1.0.4/astonish-darwin-arm64"
+      sha256 "a336d6372ae6e5cbad12429a67248ec6f5b88a48d4fa5c6dba805ea638083a01"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/schardosin/astonish/releases/download/v1.0.0/astonish-linux-amd64"
-      sha256 "dfac45de58688648a215a71b93a009dece11d6601e604c0c7332c6b00b83229a"
+      url "https://github.com/schardosin/astonish/releases/download/v1.0.4/astonish-linux-amd64"
+      sha256 "b6217904471b2602f88fa1c81cd63993227e3c9d53c40d6a1cc11e49467c8583"
     end
 
     on_arm do
-      url "https://github.com/schardosin/astonish/releases/download/v1.0.0/astonish-linux-arm64"
-      sha256 "93f590bef536bc34dbb8759f07bd36ab048bc60402f0ff9f742e243d48c806f4"
+      url "https://github.com/schardosin/astonish/releases/download/v1.0.4/astonish-linux-arm64"
+      sha256 "7f69fa5ad48a348e81f61819f2550f14c22593004c143e27a25a5e5f6767f6a2"
     end
   end
 
   def install
     binary_name = "astonish"
-    
-    # The downloaded file might have different names based on platform
-    # We need to find and rename it
     downloaded_file = Dir["astonish-*"].first || "astonish"
     
     if File.exist?(downloaded_file)
