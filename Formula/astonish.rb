@@ -10,7 +10,7 @@ class Astonish < Formula
   on_macos do
     on_intel do
       url "https://github.com/schardosin/astonish/releases/download/v1.4.9/astonish-darwin-amd64"
-      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+      sha256 "c208db874d69113da1f420d3b40590ef6e55e3eb27e75c803b15ae733dd45402"
     end
 
     on_arm do
