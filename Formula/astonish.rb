@@ -4,30 +4,30 @@
 class Astonish < Formula
   desc "AI-powered terminal assistant"
   homepage "https://github.com/schardosin/astonish"
-  version "2.5.1"
+  version "2.5.2"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/schardosin/astonish/releases/download/v2.5.1/astonish-darwin-amd64"
-      sha256 "c8f98175a73315c8ddace5c45d8e9b75244b78f92d13cabf2cc338f9cd2bd4ef"
+      url "https://github.com/schardosin/astonish/releases/download/v2.5.2/astonish-darwin-amd64"
+      sha256 "63a02a3d9bfc4a9afb098c8f60ccded7bcb05e1def95ab7f12ba4688c2571de4"
     end
 
     on_arm do
-      url "https://github.com/schardosin/astonish/releases/download/v2.5.1/astonish-darwin-arm64"
-      sha256 "244fde1bb6fe3be64e35c7029bab653091eddae19a48f6f47fb0ac087c832b03"
+      url "https://github.com/schardosin/astonish/releases/download/v2.5.2/astonish-darwin-arm64"
+      sha256 "1bef5c04033d54eb00fa2684b6d35edbac6af377df9dd2a87a6b2e62077d2e0e"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/schardosin/astonish/releases/download/v2.5.1/astonish-linux-amd64"
-      sha256 "0d062ef0d1254f2522f457dab273bd34e96bb6a32fda808da479bb13fa635c26"
+      url "https://github.com/schardosin/astonish/releases/download/v2.5.2/astonish-linux-amd64"
+      sha256 "0e8fa11ba1ea1ecb01112e8d23658835bf56a9d14179609563d2df5413c28b64"
     end
 
     on_arm do
-      url "https://github.com/schardosin/astonish/releases/download/v2.5.1/astonish-linux-arm64"
-      sha256 "213e5f4e23c7c1bd02e4eb642f43a8b65e5b7695b80c4a79be5f9fd485aefed6"
+      url "https://github.com/schardosin/astonish/releases/download/v2.5.2/astonish-linux-arm64"
+      sha256 "ccc899740f9747fcfc8ffd817a53db18489140f9281da492bc49eb1a63adabeb"
     end
   end
 
